@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/logo.png';
 
@@ -10,9 +11,9 @@ const Header = () => (
             <img src={logo} className="dib h3 br-100" alt="logo" />
         </div>
         <div className='db dtc-l v-mid w-100 w-75-l tc tr-l'>
-            <div className='link dim dark-gray f6 f5-l dib mr3 mr4-l'>
+            <Link to='/' className='link dim dark-gray f6 f5-l dib mr3 mr4-l'>
                 MY WORK
-            </div>
+            </Link>
             <div className='link dim dark-gray f6 f5-l dib mr3 mr4-l'>
                 ABOUT ME
             </div>

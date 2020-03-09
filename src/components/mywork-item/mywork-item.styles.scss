@@ -37,6 +37,10 @@
           color: white;
       }
     }
+
+    a {
+        text-decoration: none;
+    }
       
     .button_1,
     .button_2 {
@@ -45,7 +49,6 @@
         background-color:black;
         height: 40px;
         letter-spacing: 1px;
-        line-height: auto;
         font-size: 20px;
         background-color: white;
         color: black;
@@ -55,6 +58,7 @@
         justify-content: center;
         cursor: pointer;
         display: none;
+        line-height: 2;
 
         @include respond(tab-land) {
             opacity: .8;
