@@ -1,0 +1,107 @@
+@mixin respond($breakpoint) { 
+    @if $breakpoint == phone {
+       @media only screen and (max-width: 37.5em) { @content };   //600px
+    }
+    @if $breakpoint == tab-port {
+       @media only screen and (max-width: 56.25em) { @content };    //900px
+    }
+    @if $breakpoint == tab-land {
+       @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+       @media only screen and (min-width: 112.5em) { @content };    //1800px
+    }
+}
+
+.work-item {
+    position: relative;
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+  
+    .image {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .tags-bg {
+      width: auto;
+      opacity: 0.7;
+      background-color:black;
+      position: absolute;
+      top: 5px;
+      right: 2px;
+      padding: 5px;
+
+      .tags {
+          color: white;
+      }
+    }
+      
+    .button_1,
+    .button_2 {
+        width: 80%;
+        opacity: 0.7;
+        background-color:black;
+        height: 40px;
+        letter-spacing: 1px;
+        line-height: auto;
+        font-size: 20px;
+        background-color: white;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        justify-content: center;
+        cursor: pointer;
+        display: none;
+
+        @include respond(tab-land) {
+            opacity: .8;
+            display: flex;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            font-size: 15px;
+        }
+    }
+
+    .button_1 {
+        bottom: 70px;
+        position: absolute;
+
+        @include respond(tab-land) {
+            bottom: 48px;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+
+    .button_2 {
+        bottom: 15px;
+        position: absolute;
+
+        @include respond(tab-land) {
+            bottom: 2px;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+
+    &:hover {
+        .image {
+            opacity: .8;
+        }
+
+        .button_1,
+        .button_2 {
+            opacity: .8;
+            display: flex;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+        
+    }
+
+}

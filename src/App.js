@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Header from './components/header/header.component';
-import Mywork from './pages/mywork/mywork.component';
+import MyworkPage from './pages/mywork/mywork.component';
 
 function App() {
   return (
     <div>
       <Header />
-      <Mywork />
+      <MyworkPage />
     </div>
   );
 }
