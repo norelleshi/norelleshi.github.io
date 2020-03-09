@@ -46,12 +46,10 @@
     .button_2 {
         width: 80%;
         opacity: 0.7;
-        background-color:black;
-        height: 40px;
+        background-color: #292e49;
+        height: auto;
         letter-spacing: 1px;
         font-size: 20px;
-        background-color: white;
-        color: black;
         text-transform: uppercase;
         font-weight: bold;
         border: none;
@@ -60,13 +58,18 @@
         display: none;
         line-height: 2;
 
+        .icon {
+            height: auto;
+            padding-right: 10px;
+        }
+
         @include respond(tab-land) {
-            opacity: .8;
+            opacity: .9;
             display: flex;
-            background-color: black;
+            background-color: #292e49;
             color: white;
-            border: 1px solid black;
             font-size: 15px;
+            border-radius: .2rem;
         }
     }
 
@@ -75,7 +78,7 @@
         position: absolute;
 
         @include respond(tab-land) {
-            bottom: 48px;
+            bottom: 42px;
             position: absolute;
             opacity: .7;
         }
@@ -86,7 +89,7 @@
         position: absolute;
 
         @include respond(tab-land) {
-            bottom: 2px;
+            bottom: 5px;
             position: absolute;
             opacity: .7;
         }
@@ -99,11 +102,12 @@
 
         .button_1,
         .button_2 {
-            opacity: .8;
+            opacity: .95;
             display: flex;
-            background-color: black;
+            border-radius: .2rem;
+            background-color: #292e49;
             color: white;
-            border: 1px solid black;
+            border: 1px solid #292e49;
         }
         
     }

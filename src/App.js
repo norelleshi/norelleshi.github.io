@@ -3,13 +3,15 @@ import { Switch, Route } from 'react-router-dom';
 
 import Header from './components/header/header.component';
 import MyworkPage from './pages/mywork/mywork.component';
+import AboutMePage from './pages/about-me/about-me.component';
 
 function App() {
   return (
-    <div>
+    <div>     
       <Header />
       <Switch>
         <Route exact path='/' component={MyworkPage} />
+        <Route exact path='/about-me' component={AboutMePage} />
       </Switch>
     </div>
   );
