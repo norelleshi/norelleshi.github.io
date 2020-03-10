@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={MyworkPage} />
-        <Route exact path='/about-me' component={AboutMePage} />
+        <Route path='/about-me' component={AboutMePage} />
       </Switch>
     </div>
   );
