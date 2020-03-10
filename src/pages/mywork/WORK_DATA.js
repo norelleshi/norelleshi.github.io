@@ -3,7 +3,7 @@ export const WORK_DATA =
         {
             id: 1,
             name: 'CROWN Clothing',
-            tags: 'react, e-commerce',
+            tags: 'react, redux, ES6+, firebase, e-commerce',
             imageUrl: 'https://res.cloudinary.com/norelleshi/image/upload/v1583712026/portfolioImg/crownClothing.png',
             demoUrl: 'https://norelle-crwn.herokuapp.com/',
             githubUrl: 'https://github.com/norelleshi/crwn-clothing'
@@ -19,7 +19,7 @@ export const WORK_DATA =
         {
             id: 3,
             name: 'robofriends',
-            tags: 'react, AJAX',
+            tags: 'react, AJAX, ES6',
             imageUrl: 'https://res.cloudinary.com/norelleshi/image/upload/v1583722475/portfolioImg/robofriends.png',
             demoUrl: 'http://norelleshi.github.io/robofriends',
             githubUrl: 'https://github.com/norelleshi/robofriends'
@@ -27,7 +27,7 @@ export const WORK_DATA =
         {
             id: 4,
             name: 'fullcampground',
-            tags: 'node.js, Express',
+            tags: 'node.js, Express, MongoDB',
             imageUrl: 'https://res.cloudinary.com/norelleshi/image/upload/v1583712025/portfolioImg/fullcampground.png',
             demoUrl: 'https://fullcampground.herokuapp.com/',
             githubUrl: 'https://github.com/norelleshi/fullcampground'

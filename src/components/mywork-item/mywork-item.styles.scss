@@ -21,13 +21,13 @@
   
     .image {
       width: 250px;
-      height: 250px;
+      height: auto;
     }
   
     .tags-bg {
       width: auto;
-      opacity: 0.7;
-      background-color:black;
+      opacity: .5;
+      background-color:#292e49;
       position: absolute;
       top: 5px;
       right: 2px;
@@ -45,7 +45,6 @@
     .button_1,
     .button_2 {
         width: 80%;
-        opacity: 0.7;
         background-color: #292e49;
         height: auto;
         letter-spacing: 1px;
@@ -64,12 +63,13 @@
         }
 
         @include respond(tab-land) {
-            opacity: .9;
+            opacity: .95;
             display: flex;
             background-color: #292e49;
             color: white;
-            font-size: 15px;
+            font-size: 10px;
             border-radius: .2rem;
+            line-height: 3;
         }
     }
 
@@ -80,7 +80,6 @@
         @include respond(tab-land) {
             bottom: 42px;
             position: absolute;
-            opacity: .7;
         }
     }
 
@@ -91,7 +90,6 @@
         @include respond(tab-land) {
             bottom: 5px;
             position: absolute;
-            opacity: .7;
         }
     }
 
