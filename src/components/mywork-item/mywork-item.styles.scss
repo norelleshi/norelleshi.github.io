@@ -45,7 +45,7 @@
     .button_1,
     .button_2 {
         width: 80%;
-        background-color: #292e49;
+        background-color: #e6005c;
         height: auto;
         letter-spacing: 1px;
         font-size: 20px;
@@ -65,7 +65,7 @@
         @include respond(tab-land) {
             opacity: .95;
             display: flex;
-            background-color: #292e49;
+            background-color: #e6005c;
             color: white;
             font-size: 15px;
             border-radius: .2rem;
@@ -102,9 +102,9 @@
             opacity: .95;
             display: flex;
             border-radius: .2rem;
-            background-color: #292e49;
+            background-color: #e6005c;
             color: white;
-            border: 1px solid #292e49;
+            border: 1px solid #e6005c;
         }
         
     }

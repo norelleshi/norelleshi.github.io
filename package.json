@@ -1,6 +1,6 @@
 {
-  "homepage": "https://norelleshi.github.io/react-portfolio",
-  "name": "portfolio2",
+  "homepage": "https://norelleshi.github.io",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

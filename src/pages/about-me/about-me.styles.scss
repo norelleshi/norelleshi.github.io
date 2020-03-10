@@ -14,28 +14,37 @@
 }
 
 .bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    position: relative;
+    // top: 0;
+    // left: 0;
+    height: 100vh;
     z-index: -1;
     opacity: .15;
     overflow: hidden;
 
     &__content {
-        height: 100%;
+        height: 100vh;
         width: 100%;
         object-fit: cover;
     }
 }
 
 .content {
+    position: absolute;
+    top: 100px;
+    left:50%;
+    margin-left: -400px;
+    max-width: 800px;
     text-align: center;
-    width: 70%;
-    margin: 0 auto;
 
-    @include respond(tab-land) {
-        width: 90%
+    @include respond(tab-port) {
+        margin-left: -300px;
+        max-width: 600px;
+    }
+
+    @include respond(phone) {
+        margin-left: -170px;
+        max-width: 340px;
     }
 
     .profile-photo {

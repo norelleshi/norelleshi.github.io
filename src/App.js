@@ -1,18 +1,21 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import Scroll from './components/scroll/scroll.component';
 import Header from './components/header/header.component';
 import MyworkPage from './pages/mywork/mywork.component';
 import AboutMePage from './pages/about-me/about-me.component';
 
 function App() {
   return (
-    <div>     
+    <div>  
       <Header />
-      <Switch>
-        <Route exact path='/react-portfolio' component={MyworkPage} />
-        <Route path='/react-portfolio/about-me' component={AboutMePage} />
-      </Switch>
+      <Scroll>
+        <Switch>
+          <Route exact path='/react-portfolio' component={MyworkPage} />
+          <Route path='/react-portfolio/about-me' component={AboutMePage} />
+        </Switch>
+      </Scroll> 
     </div>
   );
 }
