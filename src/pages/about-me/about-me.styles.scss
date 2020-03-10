@@ -13,56 +13,38 @@
     }
 }
 
-.about-me {
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
 
-    .bg-video {
-        position: absolute;
-        top: 0;
-        left: 0;
+    &__content {
         height: 100%;
-        z-index: -1;
-        opacity: .15;
-        overflow: hidden;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 
-        &__content {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
+.content {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+    @include respond(tab-land) {
+        width: 90%
     }
 
-    .content {
-        margin: 0 auto;
-        padding: 0 20px;
-        text-align: center;
-        width: 70%;
+    .profile-photo {
+        width: 150px;
+        height: auto;
+        transform: rotate(15deg);
+    }
 
-        .profile-header {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            &__main {
-                width: 30%;   
-            }
-
-            &__sub {
-                width: 70%;
-            }
-
-            @include respond(tab-land) {
-                padding: 0 3px;
-            }
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: auto;
-            transform: rotate(15deg);
-        }
-        
-        p {
-            font-size: 1.5rem;
-        }
+    p {
+        font-size: 1.5rem;
     }
 }
