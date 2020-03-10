@@ -12,8 +12,8 @@ function App() {
       <Header />
       <Scroll>
         <Switch>
-          <Route exact path='/react-portfolio' component={MyworkPage} />
-          <Route path='/react-portfolio/about-me' component={AboutMePage} />
+          <Route exact path='/' component={MyworkPage} />
+          <Route path='/about-me' component={AboutMePage} />
         </Switch>
       </Scroll> 
     </div>

@@ -12,10 +12,10 @@ const Header = () => {
             <img src={logo} className="dib h3 br-100" alt="logo" />
         </Link>
         <div className='db dtc-l v-mid w-100 w-75-l tc tr-l'>
-            <Link to='/react-portfolio' className='link dim dark-gray f6 f5-l dib mr3 mr4-l'>
+            <Link to='/' className='link dim dark-gray f6 f5-l dib mr3 mr4-l'>
                 MY WORK
             </Link>
-            <Link to='/react-portfolio/about-me' className='link dim dark-gray f6 f5-l dib mr3 mr4-l'>
+            <Link to='/about-me' className='link dim dark-gray f6 f5-l dib mr3 mr4-l'>
                 ABOUT ME
             </Link>
         </div>
