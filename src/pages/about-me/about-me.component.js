@@ -1,8 +1,8 @@
 import React from 'react';
 
 import './about-me.styles.scss';
-import videoSource_1 from '../../assets/video.mp4';
-import videoSource_2 from '../../assets/video.webm';
+// import videoSource_1 from '../../assets/video.mp4';
+// import videoSource_2 from '../../assets/video.webm';
 import profile_photo from '../../assets/profile_photo.png';
 
 const AboutMePage = () => (
@@ -24,8 +24,8 @@ const AboutMePage = () => (
                 <ul>
                     <span className='list_title'>What I can do:</span>
                     <br />
-                    <li>Build reactive, performant, scalable web applications with <strong>React, Redstrongx, node.js</strong></li>
-                    <li>Use the latest <strong>ES6+</strong> JavaScript to write clean code</li>
+                    <li>Build reactive, performant, scalable web applications with <span className='keyword'>React, Redspanx, node.js</span></li>
+                    <li>Use the latest <span className='keyword'>ES6+</span> JavaScript to write clean code</li>
                     <li>Build enterprise level applications and deploy to production</li>
                     <li>Understand the tradeoffs in employing different engineering solutions to a problem</li>
                     <li>Set up authentication and user accounts with firebase</li>
