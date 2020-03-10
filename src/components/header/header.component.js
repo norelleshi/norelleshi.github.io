@@ -8,7 +8,7 @@ import './header.styles.scss';
 const Header = () => {
     return (
     <nav className='header db dt-l w-100 border-box pa2 ph5-l'>
-        <Link to='/react-portfolio' className='db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l'>
+        <Link to='/' className='db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l'>
             <img src={logo} className="dib h3 br-100" alt="logo" />
         </Link>
         <div className='db dtc-l v-mid w-100 w-75-l tc tr-l'>
