@@ -10,8 +10,8 @@ function App() {
     <div>     
       <Header />
       <Switch>
-        <Route exact path='/' component={MyworkPage} />
-        <Route path='/about-me' component={AboutMePage} />
+        <Route exact path='/react-portfolio' component={MyworkPage} />
+        <Route path='/react-portfolio/about-me' component={AboutMePage} />
       </Switch>
     </div>
   );
